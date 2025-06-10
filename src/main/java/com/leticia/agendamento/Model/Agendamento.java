@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
+
+
 @Entity
 public class Agendamento {
 
@@ -16,11 +18,10 @@ public class Agendamento {
     private LocalDate data;
     private LocalTime horario;
 
-    // Construtor vazio (obrigatório pro JPA)
+
     public Agendamento() {
     }
 
-    // Construtor com tudo (menos o ID, que é automático)
     public Agendamento(String cliente, String servico, LocalDate data, LocalTime horario) {
         this.cliente = cliente;
         this.servico = servico;
